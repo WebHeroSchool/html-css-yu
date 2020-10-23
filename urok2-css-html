@@ -25,7 +25,6 @@
         Вторая секция
       </p>
     </section>
-    <sectioт>
       <article>
         <p>
           Важная часть контента секции
@@ -36,7 +35,6 @@
           </p>
         </aside>
       </article>
-    </sectioт>
     <footer>Подвал</footer>
   </body>
 
