@@ -6,6 +6,7 @@
 
 .logo {
   padding: 40px 0;
+  border: dashed 1px red;
 }
 
 .header {
@@ -29,4 +30,9 @@
 
 .menu__item:last-child {
   padding-right: 0;
+}
+
+.body{
+  margin: 0;
+  border: dashed 1px red;
 }
