@@ -1,19 +1,10 @@
 .wrapper {
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
 }
 
-.header, .main-section {
-  border: dashed 1px red;
-}
-
-.logo, .menu {
- border: dashed 1px red;
-}
 .logo {
   padding: 40px 0;
-  border: dashed 1px red;
 }
 
 .header {
@@ -32,14 +23,12 @@
 
 .menu__item {
   padding: 0 13px;
-  border: dashed 1px red;
 }
 
 .menu__item:last-child {
   padding-right: 0;
 }
 
-.body{
+.body {
   margin: 0;
-  border: dashed 1px red;
 }
