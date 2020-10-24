@@ -4,6 +4,13 @@
   border: dashed 1px red;
 }
 
+.header, .main-section {
+  border: dashed 1px red;
+}
+
+.logo, .menu {
+ border: dashed 1px red;
+}
 .logo {
   padding: 40px 0;
   border: dashed 1px red;
