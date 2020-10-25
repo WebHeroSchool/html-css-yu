@@ -34,15 +34,12 @@
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-}
-
-.title {
-  font-family: Roboto, arial, helvetica, sans-serif;
 }
 
 .menu__item {
@@ -77,6 +74,44 @@
 
 .menu__item:last-child {
   margin-right: 0;
+}
+
+.title {
+  font-family: Roboto, arial, helvetica, sans-serif;
+}
+
+.main {
+  padding: 0 63% 150px 0;
+  background: top right no-repeat url(img/mainImg.svg);
+}
+
+.main__title {
+  margin-bottom: 0 0 40px 0;
+  font: bold 50px/65px pt_serif;
+}
+
+.main__title-text_highlight {
+  background: #ecf3ff;
+}
+
+.main__subtitle {
+  margin-bottom: 0 0 41px 0;
+  font: 18px/21px Roboto, arial, helvetica, sans-serif;
+}
+
+.main__button {
+  display: inline-block;
+  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
 }
 
 .body {
