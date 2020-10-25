@@ -42,15 +42,41 @@
 }
 
 .title {
-  font-family: Roboto;
+  font-family: Roboto, arial, helvetica, sans-serif;
 }
 
 .menu__item {
-  padding: 0 13px;
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu__item::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
+  margin-right: 26px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.menu__item:hover {
+  opacity: .5;
+}
+
+.menu__item:hover::after,
+.menu__item_active::after {
+  opacity: 1;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .body {
