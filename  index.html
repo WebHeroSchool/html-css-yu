@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta @charset "UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>app.creation</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="font.css">
@@ -15,33 +17,46 @@
           <div class="logo">
             <div class="logo__circle logo__circle_color_dark-blue"></div>
             <div class="logo__circle logo__circle_color_blue"></div>
-            app.creation
+            <div class="logo__txt">app.creation</div>
           </div>
-          <nav class="menu">
-            <a class="menu__item" href="a">start</a>
-            <a class="menu__item menu__item_active" href="a">services</a>
-            <a class="menu__item" href="a">about</a>
-            <a class="menu__item" href="a">blog</a>
-            <a class="menu__item" href="a">contact us</a>
-          </nav>
+            <nav class="menu">
+              <a class="menu__item" href="a">start</a>
+              <a class="menu__item menu__item_active" href="a">services</a>
+              <a class="menu__item" href="a">about</a>
+              <a class="menu__item" href="a">blog</a>
+              <a class="menu__item" href="a">contact us</a>
+            </nav>
         </header>
-
-          <section class="main">
-            <h1 class="main__title">
-              Building an App
-              <span class="main__title-text_highlight">
+        <input id="menu__hamburger-toggle" type="checkbox" />
+        <label class="menu__hamburger-btn" for="menu__hamburger-toggle">
+          <span>&#9776;</span>
+        </label>
+        <div class="menu__hamburger">
+          <ul class="menu__hamburger-box">
+            <li><a class="menu__hamburger-box-item" href="#">start</a></li>
+            <li><a class="menu__hamburger-box-item" href="#">services</a></li>
+            <li><a class="menu__hamburger-box-item" href="#">about</a></li>
+            <li><a class="menu__hamburger-box-item" href="#">blog</a></li>
+            <li><a class="menu__hamburger-box-item" href="#">contact us</a></li>
+          </ul>
+        </div>
+        <section class="main">
+          <h1 class="main__title">
+            Building an&nbsp;App
+            <span class="main__title-text_highlight">
               Without Design Expertise?
-              </span>
-            </h1>
-            <p class="main__subtitle">
-              I help tech startups design better digital products without hiring a full-time designer
-            </p>
-            <a class="main__button"href="#">
-              Schedule free consultation
-            </a>
-          </section>
+            </span>
+          </h1>
+          <p class="main__subtitle">
+            I help tech startups design better digital products without hiring a&nbsp;full-time designer
+          </p>
+          <a class="main__button" href="#">
+            Schedule free consultation
+          </a>
+        </section>
       </div>
     </body>
   </head>
   </head>
+
 </html>

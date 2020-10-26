@@ -1,3 +1,10 @@
+#menu__hamburger-toggle,
+.menu__hamburger-box-item,
+.menu__hamburger-btn,
+.menu__hamburger-box {
+  display: none;
+}
+
 .wrapper {
   margin: auto;
   width: 80%;
@@ -116,4 +123,103 @@
 
 .body {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .logo__txt,
+  .menu__item  {
+    display: none;
+  }
+  .logo__circle {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 29px;
+    border-radius: 50%;
+    opacity: .7;
+  }
+
+  .logo__circle_color_blue {
+    left: 8px;
+    top: 66%;
+    background: #c8dbfb;
+  }
+
+  .logo__circle_color_dark-blue {
+    background: #0056ec;
+  }
+
+  #menu__hamburger-toggle {
+    opacity: 0; 
+    align-items: center;
+    position: fixed;
+    top: 5%;
+    left: 70%;
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+  }
+
+  .menu__hamburger{
+    display: none;
+  }
+
+  .menu__hamburger-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 5%;
+    left: 72%;
+    width: 28px;
+    height: 28px;
+    color: #0056EC;
+    z-index: 1;
+  }
+
+  #menu__hamburger-toggle:checked ~.main {
+    display:none;
+  }
+
+/*  COMMENT : Не понимаю как одновременно
+    - скрыть все элементы при нажатии на чекбокс
+    - Вывести элементы меню на весь мобильный экран
+    #menu__hamburger-toggle:checked ~.menu__hamburger-box-item {
+    display: inline-block;
+    color: #000;
+    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+*/
+
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+    z-index: 1;
+    }
+
+    .main__title {
+      margin-bottom: 44px;
+      font: bold 30px/39px pt_serif;
+    }
+
+    .main__subtitle {
+      margin-bottom: 25px;
+      font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+    }
+
+    .main__button {
+      font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    }
 }
