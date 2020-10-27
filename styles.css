@@ -604,5 +604,6 @@
 
   .main__button {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    margin-bottom: 10%;
   }
 }
