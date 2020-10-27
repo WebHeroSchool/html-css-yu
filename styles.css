@@ -242,7 +242,6 @@
   .body {
     margin: 0;
   }
-
 }
 
 @media (min-width: 1366px) {
@@ -496,7 +495,7 @@
 
 @media (max-width: 768px) {
   .logo__txt,
-  .menu__item  {
+  .menu__item {
     display: none;
   }
 
@@ -532,7 +531,6 @@
     position: fixed;
     opacity: 0;
     align-items: center;
-    position: fixed;
     top: 4%;
     left: 85%;
     width: 28px;
@@ -545,7 +543,7 @@
     position: fixed;
     top: 4%;
     left: 88%;
-    color: #0056EC;
+    color: #0056ec;
   }
 
   .menu-hamburger {
@@ -564,15 +562,11 @@
     text-decoration: none;
   }
 
-  #menu-hamburger__toggle:checked ~.main {
-    display:none;
+  #menu-hamburger__toggle:checked ~ .logo__circle {
+    display: none;
   }
 
-  #menu-hamburger__toggle:checked ~.logo__circle {
-    display:none;
-  }
-
-  #menu-hamburger__toggle:checked ~.menu-hamburger {
+  #menu-hamburger__toggle:checked ~ .menu-hamburger {
     display: inline-block;
   }
 
@@ -586,25 +580,29 @@
     background-size: 91%;
     background-position: top center;
     z-index: 1;
-    }
+  }
 
-    .main__title {
-      margin-bottom: 35px;
-      font: bold 33px/38px pt_serif;
-    }
+  #menu-hamburger__toggle:checked ~ .main {
+      display: none;
+  }
 
-    .main__title-text_highlight {
-      background: #ecf3ff;
-      white-space: pre-line;
-    }
+  .main__title {
+    margin-bottom: 35px;
+    font: bold 33px/38px pt_serif;
+  }
 
-    .main__subtitle {
-      margin-bottom: 25px;
-      padding: 0 11%;
-      font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
-    }
+  .main__title-text_highlight {
+    background: #ecf3ff;
+    white-space: pre-line;
+  }
 
-    .main__button {
-      font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
-    }
+  .main__subtitle {
+    margin-bottom: 25px;
+    padding: 0 11%;
+    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
 }
