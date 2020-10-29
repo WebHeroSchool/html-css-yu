@@ -244,7 +244,7 @@
   }
 }
 
-@media (min-width: 1366px) {
+@media all and (max-width: 1919px) and (min-width: 1366px) {
   .wrapper {
     margin: auto;
     width: 68%;
@@ -368,7 +368,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media all and (max-width: 1365px) and (min-width: 1024px) {
   .wrapper {
     margin: auto;
     width: 92%;
