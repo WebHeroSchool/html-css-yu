@@ -505,7 +505,6 @@
   }
 
   .logo__circle {
-    display: block;
     position: absolute;
     left: -4px;
     top: 40%;
@@ -517,13 +516,23 @@
   }
 
   .logo__circle_color_blue {
+    display: block;
     left: 8px;
     top: 46%;
     background: #c8dbfb;
   }
 
   .logo__circle_color_dark-blue {
+    display: block;
     background: #0056ec;
+  }
+
+  #menu-hamburger__toggle:checked ~ .logo__circle_color_blue {
+    display: none;
+  }
+
+  #menu-hamburger__toggle:checked ~ .logo__circle_color_dark-blue {
+    display: none;
   }
 
   #menu-hamburger__toggle {
@@ -546,23 +555,39 @@
     color: #0056ec;
   }
 
+  .menu-hamburger__X {
+    color: #0056ec;
+    font-size: 2.5em;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 2.5%;
+    left: 87%;
+  }
+
   .menu-hamburger {
     display: none;
     position: absolute;
     vertical-align: middle;
     left: 50%;
-    top: 25%;
+    top: 32%;
     margin-top: -50px;
-    margin-left: -150px;
+    margin-left: -155px;
   }
 
   .menu-hamburger__item {
     color: #000;
-    font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
+    font: 500 33px/58px Roboto, arial, helvetica, sans-serif;
     text-decoration: none;
   }
 
-  #menu-hamburger__toggle:checked ~ .logo__circle {
+  #menu-hamburger__toggle:checked ~ .menu-hamburger__X {
+    display: block;
+  }
+
+  #menu-hamburger__toggle:checked ~ .menu-hamburger__btn {
     display: none;
   }
 
@@ -583,7 +608,7 @@
   }
 
   #menu-hamburger__toggle:checked ~ .main {
-      display: none;
+    display: none;
   }
 
   .main__title {
