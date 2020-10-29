@@ -1,5 +1,6 @@
 #menu-hamburger__toggle,
 .menu-hamburger__btn,
+.menu-hamburger__X,
 .menu-hamburger {
   display: none;
 }
@@ -126,10 +127,16 @@
 }
 
 @media (min-width: 1920px) {
+
+  .wrapper {
+    margin: auto;
+    width: 80.5%;
+  }
+
   .logo {
     position: relative;
-    padding: 30px 0;
-    padding-left: 42px;
+    padding: 32px 0;
+    padding-left: 47.5px;
     font: bold 27px/35px pt_serif;
   }
 
@@ -157,7 +164,7 @@
   .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 150px;
+    margin-bottom: 135px;
   }
 
   .menu {
@@ -168,7 +175,7 @@
   .menu__item {
     position: relative;
     margin-right: 26px;
-    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+    font: 500 19px/23px Roboto, arial, helvetica, sans-serif;
     color: #000;
     text-decoration: none;
   }
@@ -181,7 +188,7 @@
     width: 100%;
     height: 3px;
     background: #0056ec;
-    margin-right: 26px;
+    margin-right: 20px;
     opacity: 0;
     transition: opacity .5s;
   }
@@ -204,32 +211,36 @@
   }
 
   .main {
-    padding: 1px 67% 170px 0;
+    padding: 5px 66.3% 169px 0.2px;
     background: top right no-repeat url(img/mainImg1920.svg);
   }
 
   .main__title {
-    font: bold 71px/94px pt_serif;
+    font: bold 73px/87px pt_serif;
     margin-bottom: 0;
+    margin-block-start: 0.95em;
   }
 
   .main__title-text_highlight {
     background: #ecf3ff;
+    font: bold 74px/89px pt_serif;
     white-space: pre-line;
   }
 
   .main__subtitle {
     margin-bottom: 0 0 52px 0;
-    font: 24px/26px Roboto, arial, helvetica, sans-serif;
+    font: 22px/25px Roboto, arial, helvetica, sans-serif;
+    margin-block-start: 1.3em;
     margin-block-end: 2em;
+    padding-right: 15%;
   }
 
   .main__button {
     display: inline-block;
-    font: 20px/23px Roboto, arial, helvetica, sans-serif;
+    font: 18px/27px Roboto, arial, helvetica, sans-serif;
     color: #fff;
     background: #0056ec;
-    padding: 16px 18px;
+    padding: 16px 30px;
     text-decoration: none;
     border-radius: 4px;
     transition: opacity .5s;
