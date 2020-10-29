@@ -550,8 +550,9 @@
     display: block;
     align-items: center;
     position: fixed;
-    top: 4%;
-    left: 88%;
+    font-size: 1.8em;
+    top: 3%;
+    left: 87%;
     color: #0056ec;
   }
 
