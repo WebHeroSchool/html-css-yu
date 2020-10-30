@@ -517,13 +517,6 @@
     width: 87%;
   }
 
-  .logo {
-    position: relative;
-    padding: 34px 0;
-    padding-left: 44px;
-    font: bold 26px/33px pt_serif;
-  }
-
   .logo__circle {
     position: absolute;
     left: -7px;
@@ -583,16 +576,19 @@
     display: none;
     position: absolute;
     vertical-align: middle;
-    left: 50%;
+    background-color: white;
+    padding: 43% 0 0 19%;
+    left: 0;
     top: 0;
-    margin-top: -50px;
-    margin-left: -155px;
+    margin: 0 0;
+    height: vh;
+    width: vw;
     z-index: 999;
   }
 
   .menu-hamburger__item {
     color: #000;
-    font: 500 33px/58px Roboto, arial, helvetica, sans-serif;
+    font: 500 33px/59px Roboto, arial, helvetica, sans-serif;
     text-decoration: none;
     z-index: 999;
   }
