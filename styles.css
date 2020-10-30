@@ -517,6 +517,13 @@
     width: 87%;
   }
 
+  .logo {
+    position: relative;
+    padding: 34px 0;
+    padding-left: 44px;
+    font: bold 26px/33px pt_serif;
+  }
+
   .logo__circle {
     position: absolute;
     left: -7px;
@@ -537,10 +544,6 @@
 
   .logo__circle_color_dark-blue {
     background: #0056ec;
-  }
-
-  #menu-hamburger__toggle:not(:checked) ~ .logo__circle {
-    display: block;
   }
 
   #menu-hamburger__toggle {
@@ -581,17 +584,17 @@
     position: absolute;
     vertical-align: middle;
     left: 50%;
-    top: 32%;
+    top: 0;
     margin-top: -50px;
     margin-left: -155px;
-    z-index: 1;
+    z-index: 999;
   }
 
   .menu-hamburger__item {
     color: #000;
     font: 500 33px/58px Roboto, arial, helvetica, sans-serif;
     text-decoration: none;
-    z-index: 1;
+    z-index: 999;
   }
 
   #menu-hamburger__toggle:checked ~ .menu-hamburger__X {
