@@ -257,30 +257,17 @@
   }
 
   .wrapper {
-    margin: auto;
-    width: 87%;
+    width: 85%;
   }
 
   .logo__circle {
-    position: absolute;
-    left: -7px;
-    top: 40%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 29px;
-    border-radius: 50%;
-    opacity: .7;
+    left: -11px;
+    top: 38%;
   }
 
   .logo__circle_color_blue {
-    left: 2px;
+    left: -3px;
     top: 46%;
-    background: #c8dbfb;
-    z-index: 10;
-  }
-
-  .logo__circle_color_dark-blue {
-    background: #0056ec;
   }
 
   #menu-hamburger__toggle {
@@ -298,9 +285,9 @@
     display: block;
     align-items: center;
     position: fixed;
-    font-size: 1.8em;
-    top: 3%;
-    left: 87%;
+    font-size: 32px;
+    top: 2.6%;
+    left: 86.5%;
     color: #0056ec;
   }
 
@@ -312,8 +299,8 @@
     display: none;
     align-items: center;
     position: fixed;
-    top: 2.5%;
-    left: 87%;
+    top: 2.3%;
+    left: 87.2%;
   }
 
   .menu-hamburger {
@@ -321,7 +308,7 @@
     position: absolute;
     vertical-align: middle;
     background-color: white;
-    padding: 43% 0 0 19%;
+    padding: 42% 0 0 20%;
     left: 0;
     top: 0;
     margin: 0 0;
@@ -332,7 +319,7 @@
 
   .menu-hamburger__item {
     color: #000;
-    font: 500 33px/59px Roboto, arial, helvetica, sans-serif;
+    font: 500 30px/60px Roboto, arial, helvetica, sans-serif;
     text-decoration: none;
     z-index: 999;
   }
@@ -346,7 +333,7 @@
   }
 
   #menu-hamburger__toggle:checked ~ .menu-hamburger {
-    display: inline-block;
+    display: block;
   }
 
   .header {
@@ -366,24 +353,17 @@
   }
 
   .main__title {
-    margin: 42px 0 35px 0;
-    font: bold 33px/38px PT Serif;
-  }
-
-  .main__title-text_highlight {
-    background: #ecf3ff;
-    white-space: pre-line;
+    margin: 45px 0 35px 7px;
+    font: bold 30px/39px PT Serif;
   }
 
   .main__subtitle {
-    margin-bottom: 25px;
-    padding: 0 11%;
+    padding: 0 25px 8px 30px;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
   }
 
   .main__button {
-    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     margin-bottom: 10%;
-    padding: 14px 23px;
+    padding: 14px 26px 14px 18px;
   }
 }
