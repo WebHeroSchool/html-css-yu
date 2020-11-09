@@ -14,7 +14,7 @@
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px PT Serif;
+  font: bold 24px/31px PT Serif, arial, helvetica, sans-serif;
 }
 
 .logo__circle {
@@ -94,7 +94,7 @@
 
 .main__title {
   margin-bottom: 0 0 40px 0;
-  font: bold 50px/65px PT Serif;
+  font: bold 50px/65px PT Serif, arial, helvetica, sans-serif;
 }
 
 .main__title-text_highlight {
@@ -157,7 +157,7 @@
   }
 
   .main__title {
-    font: bold 66px/87px PT Serif;
+    font: bold 66px/87px PT Serif, arial, helvetica, sans-serif;
     margin-block-start: 0.95em;
     margin-block-end: 37px;
   }
@@ -354,7 +354,7 @@
 
   .main__title {
     margin: 45px 0 35px 7px;
-    font: bold 30px/39px PT Serif;
+    font: bold 30px/39px PT Serif, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
