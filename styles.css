@@ -1,3 +1,10 @@
+#menu-hamburger__toggle,
+.menu-hamburger__btn,
+.menu-hamburger__X,
+.menu-hamburger {
+  display: none;
+}
+
 .wrapper {
   margin: auto;
   width: 80%;
@@ -7,7 +14,7 @@
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px pt_serif;
+  font: bold 24px/31px PT Serif, arial, helvetica, sans-serif;
 }
 
 .logo__circle {
@@ -87,11 +94,12 @@
 
 .main__title {
   margin-bottom: 0 0 40px 0;
-  font: bold 50px/65px pt_serif;
+  font: bold 50px/65px PT Serif, arial, helvetica, sans-serif;
 }
 
 .main__title-text_highlight {
   background: #ecf3ff;
+  white-space: pre-line;
 }
 
 .main__subtitle {
@@ -116,4 +124,246 @@
 
 .body {
   margin: 0;
+}
+
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 80.5%;
+  }
+
+  .logo {
+    padding: 32px 0;
+    padding-left: 47.5px;
+    z-index: 10;
+  }
+
+  .header {
+    margin-bottom: 140px;
+  }
+
+  .menu__item {
+    padding-top: 4px;
+    margin-right: 27px;
+    font: 500 18px/23px Roboto, arial, helvetica, sans-serif;
+  }
+
+  .menu__item:last-child {
+    margin-right: 8px;
+  }
+
+  .main {
+    padding: 10px 66.5% 169px 0.2px;
+    background: top right no-repeat url(img/mainImg1920.svg);
+  }
+
+  .main__title {
+    font: bold 66px/87px PT Serif, arial, helvetica, sans-serif;
+    margin-block-start: 0.95em;
+    margin-block-end: 37px;
+  }
+
+  .main__subtitle {
+    margin-bottom: 0 0 52px 0;
+    font: 22px/25px Roboto, arial, helvetica, sans-serif;
+    margin-block-end: 41px;
+    padding-right: 16%;
+  }
+
+  .main__button {
+    font: 18px/32px Roboto, arial, helvetica, sans-serif;
+    padding: 13px 33px 13px 24px;
+  }
+}
+
+@media all and (max-width: 1919px) and (min-width: 1366px) {
+  .wrapper {
+    width: 69%;
+  }
+
+  .logo {
+    padding: 31px 0 31px 44px;
+  }
+
+  .header {
+    margin-bottom: 94px;
+  }
+
+  .menu__item {
+    padding: 7px 0 0 0;
+    margin-right: 24px;
+    font: 500 15px/17px Roboto, arial, helvetica, sans-serif;
+  }
+
+  .main {
+    padding: 0 58% 150px 0;
+    background: top right no-repeat url(img/mainImg1366.svg);
+  }
+
+  .main__title {
+    padding-top: 18px;
+    margin-block-end: 0.8em;
+  }
+
+  .main__subtitle {
+    margin-top: 0;
+    margin-block-end: 2.3em;
+  }
+
+  .main__button {
+    padding: 14px 25px 14px 18px;
+  }
+}
+
+@media all and (max-width: 1365px) and (min-width: 1024px) {
+  .wrapper {
+    width: 92.5%;
+  }
+
+  .logo {
+    padding: 33px 0 34px 44px;
+  }
+
+  .header {
+    margin-bottom: 87px;
+  }
+
+  .menu__item {
+    font: 500 14px/17px Roboto, arial, helvetica, sans-serif;
+  }
+
+  .main {
+    padding: 0 58% 150px 0;
+    background: top right no-repeat url(img/mainImg1024.svg);
+  }
+
+  .main__title {
+    padding-top: 20px;
+    margin-block-end: 0.77em;
+  }
+
+  .main__subtitle {
+    margin-block-end: 2.3em;
+  }
+
+  .main__button {
+    padding: 14px 25px 16px 17px;
+  }
+}
+
+@media (max-width: 970px) {
+  .logo__txt,
+  .menu__item {
+    display: none;
+  }
+
+  .wrapper {
+    width: 85%;
+  }
+
+  .logo__circle {
+    left: -11px;
+    top: 38%;
+  }
+
+  .logo__circle_color_blue {
+    left: -3px;
+    top: 46%;
+  }
+
+  #menu-hamburger__toggle {
+    display: block;
+    position: fixed;
+    opacity: 0;
+    align-items: center;
+    top: 4%;
+    left: 85%;
+    width: 28px;
+    height: 28px;
+  }
+
+  .menu-hamburger__btn {
+    display: block;
+    align-items: center;
+    position: fixed;
+    font-size: 32px;
+    top: 2.6%;
+    left: 86.5%;
+    color: #0056ec;
+  }
+
+  .menu-hamburger__X {
+    color: #0056ec;
+    font-size: 2.5em;
+    width: 40px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 2.3%;
+    left: 87.2%;
+  }
+
+  .menu-hamburger {
+    display: none;
+    position: absolute;
+    vertical-align: middle;
+    background-color: white;
+    padding: 42% 0 0 20%;
+    left: 0;
+    top: 0;
+    margin: 0 0;
+    height: vh;
+    width: vw;
+    z-index: 999;
+  }
+
+  .menu-hamburger__item {
+    color: #000;
+    font: 500 30px/60px Roboto, arial, helvetica, sans-serif;
+    text-decoration: none;
+    z-index: 999;
+  }
+
+  #menu-hamburger__toggle:checked ~ .menu-hamburger__X {
+    display: block;
+  }
+
+  #menu-hamburger__toggle:checked ~ .menu-hamburger__btn {
+    display: none;
+  }
+
+  #menu-hamburger__toggle:checked ~ .menu-hamburger {
+    display: block;
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .main {
+    text-align: center;
+    padding: 70% 0 0;
+    background-size: 91%;
+    background-position: top center;
+    z-index: 1;
+  }
+
+  #menu-hamburger__toggle:checked ~ .main {
+    display: none;
+  }
+
+  .main__title {
+    margin: 45px 0 35px 7px;
+    font: bold 30px/39px PT Serif, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    padding: 0 25px 8px 30px;
+    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    margin-bottom: 10%;
+    padding: 14px 26px 14px 18px;
+  }
 }
