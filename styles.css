@@ -38,7 +38,7 @@
 .logo__circle_color_dark-blue {
   background: #0056ec;
 }
-
+/*
 @keyframes circle {
   0% {
     transform: scale(1);
@@ -65,7 +65,7 @@
     transform: scale(1);
   }
 }
-
+*/
 .header {
   display: flex;
   justify-content: space-between;
