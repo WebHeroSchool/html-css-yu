@@ -26,6 +26,7 @@
   height: 29px;
   border-radius: 50%;
   opacity: .7;
+  animation: circle 2s infinite;
 }
 
 .logo__circle_color_blue {
@@ -36,6 +37,27 @@
 
 .logo__circle_color_dark-blue {
   background: #0056ec;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+  48% {
+    transform: scaleY(1.1) scaleX(0.9);
+  }
+  68% {
+    transform: scaleY(0.98) scaleX(1.02);
+  }
+  80% {
+    transform: scaleY(1.02) scaleX(0.98);
+  }
+  97%, 100% {
+    transform: scale(1);
+  }
 }
 
 .header {
